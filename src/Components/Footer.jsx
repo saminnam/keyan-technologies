@@ -7,7 +7,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <section className="pt-10 sm:pt-16 bg-footer-pattern bg-cover bg-no-repeat">
+    <section className="pt-10 sm:pt-16 bg-[#e8ffe8]">
       <div className="w-full max-w-screen-2xl">
         <div className="grid grid-cols-2 px-4 mx-auto lg:px-20 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
           <div className="col-span-2 md:col-span-4 xl:pr-8">
@@ -20,10 +20,10 @@ const Footer = () => {
             </p>
             <Link
               to={"/contact"}
-              className="flex mt-5 justify-between cursor-pointer w-[230px] shadow-sm shadow-white border p-3 rounded"
+              className="flex mt-5 bg-white justify-between cursor-pointer w-[230px] border border-[#006CB7] p-3 rounded"
             >
               <p>info@inetztech.com</p>
-              <IoMailOpenOutline className="text-2xl" />
+              <IoMailOpenOutline className="text-2xl text-[#006CB7]" />
             </Link>
           </div>
           <div className="lg:col-span-2">
@@ -33,7 +33,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/about"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   About
                 </Link>
@@ -41,7 +41,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/services"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Services
                 </Link>
@@ -49,7 +49,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/portfolios"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Portfolio
                 </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/career"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Career
                 </Link>
@@ -71,7 +71,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/services"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Web Development
                 </Link>
@@ -79,7 +79,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/services"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   App Development
                 </Link>
@@ -87,7 +87,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/services"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Software Development
                 </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/landingpage"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Landing Page
                 </Link>
@@ -109,7 +109,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/portfolios"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   E-Commerce
                 </Link>
@@ -117,7 +117,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/portfolios"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Booking Applications
                 </Link>
@@ -125,7 +125,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/portfolios"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Healthcare Services
                 </Link>
@@ -133,7 +133,7 @@ const Footer = () => {
               <li>
                 <Link
                   to={"/portfolios"}
-                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-white focus:text-white"
+                  className="flex text-[16px]  hover:translate-x-2 text-black transition-all duration-300 hover:text-[#006CB7] focus:text-[#006CB7]"
                 >
                   Social Media Platform
                 </Link>

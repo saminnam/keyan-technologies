@@ -3,7 +3,10 @@ import { FaPalette, FaFileAlt, FaSmile } from "react-icons/fa";
 const Card = () => {
   return (
     <section className="max-w-screen-2xl px-5 py-16 lg:px-20 md:py-20 bg-choose-pattern bg-fixed bg-cover bg-no-repeat">
-      <div className="flex lg:flex-row flex-col justify-between items-center gap-6">
+      <div
+        className="flex lg:flex-row flex-col justify-between items-center gap-6"
+        data-aos="fade-down"
+      >
         <div className="flex items-center space-x-4 bg-white">
           <div className="text-5xl text-white bg-info-pattern bg-cover bg-no-repeat py-12 px-7">
             <FaPalette />
@@ -19,7 +22,7 @@ const Card = () => {
         </div>
         <div className="flex group items-center space-x-4 bg-white">
           <div className="text-5xl text-white bg-info-pattern bg-cover bg-no-repeat py-12 px-7">
-              <FaFileAlt />
+            <FaFileAlt />
           </div>
 
           <div>

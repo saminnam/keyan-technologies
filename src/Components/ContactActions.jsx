@@ -28,7 +28,7 @@ const ContactActions = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-6 md:flex-row mt-20 mb-24 justify-between mx-auto w-full max-w-7xl md:px-10">
+    <div className="flex flex-col gap-6 items-center md:flex-row mt-20 mb-24 justify-between mx-auto w-full max-w-7xl md:px-10">
       {cards.map((card, index) => (
         <div
           key={index}

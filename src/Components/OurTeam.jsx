@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { apiRequest } from "./Api";
 
 const OurTeam = () => {
@@ -27,17 +26,19 @@ const OurTeam = () => {
       <p className="lg:w-[900px] w-full text-center mx-auto font-bold font-serif text-black sm:text-2xl lg:text-4xl">
         Meet the innovative minds driving our software solutions forward.
       </p>
-
       {teams.length > 0 ? (
         <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 mx-10 gap-10 mt-12">
           {teams.map((team) => (
-            <div data-aos="fade-up" key={team.id}>
-              <div className="bg-white rounded-lg shadow-lg border transition-all ease-linear duration-300 hover:border-[#2986fe] cursor-pointer hover:scale-105 p-6 my-6 flex flex-col justify-center items-center">
+            <div className="relative group overflow-hidden flex flex-col items-center" key={team.id}
+            data-aos="fade-up">
+              <div className="rounded-lg shadow-lg border transition-all p-6 bg-white ease-linear duration-300 hover:border-[#2986fe] cursor-pointer hover:scale-105 my-6 flex flex-col justify-center items-center">
                 <img
                   src={`http://localhost:3000/Images/${team.image}`}
                   alt={team.name}
                   className="w-full h-72 object-cover rounded mb-4"
                 />
+              </div>
+              <div className="absolute group-hover:bottom-8 border-[#2986fe] border w-full transition-all ease-linear duration-300 bottom-[-100px] flex flex-col justify-center items-center bg-white p-3 rounded">
                 <h3 className="text-xl font-semibold mb-2">{team.Name}</h3>
                 <p className="text-gray-700">{team.Role}</p>
               </div>

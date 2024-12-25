@@ -10,7 +10,7 @@ const BlogDetailPage = () => {
       <GlobalTitle title={"BLOG DETAILS"} />
       <div className="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20 border my-16 shadow-xl rounded">
         <div className="flex flex-col gap-14 lg:gap-20">
-          <div className="flex justify-between items-center gap-10 flex-wrap lg:flex-nowrap">
+          <div className="flex items-center gap-10 flex-wrap lg:flex-nowrap">
             <img
               src={`http://localhost:3000/Images/${blogPost.image}`}
               alt={blogPost.title}
@@ -20,8 +20,7 @@ const BlogDetailPage = () => {
               <h2 className="text-3xl md:text-5xl font-bold text-center">
                 {blogPost.title}
               </h2>
-
-              <div className="">
+              <div>
                 <hr />
                 <h2 className="text-xl py-2 font-medium uppercase tracking-wider text-center text-[#006CB7]">
                   {blogPost.category}

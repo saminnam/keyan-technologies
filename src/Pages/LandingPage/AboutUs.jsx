@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <section className="max-w-screen-2xl px-5 py-16 lg:px-20 md:py-20">
       <div className="flex gap-20 lg:flex-row flex-col md:flex-col">
-        <div className="lg:w-[1450px] w-full">
+        <div className="lg:w-[1450px] w-full" data-aos="fade-left">
           <div className="flex mb-5">
             <h1 className="text-sm border-b border-[#2986fe] lg:text-lg text-[#2986fe] font-semibold">
               Our Landing Page Services
@@ -14,13 +14,16 @@ const AboutUs = () => {
             High-Converting Landing Page Design for Your Business Success
           </h2>
           <p>
-            At our company, we specialize in creating professional landing
-            pages designed to increase conversions, capture leads, and enhance
-            your digital presence. Each landing page is optimized for SEO,
-            mobile responsiveness, and user engagement, ensuring your business
-            stands out in a competitive market.
+            At our company, we specialize in creating professional landing pages
+            designed to increase conversions, capture leads, and enhance your
+            digital presence. Each landing page is optimized for SEO, mobile
+            responsiveness, and user engagement, ensuring your business stands
+            out in a competitive market.
           </p>
-          <div className="flex justify-between mt-16 lg:flex-row flex-col items-center gap-8 lg:gap-7">
+          <div
+            className="flex justify-between mt-16 lg:flex-row flex-col items-center gap-8 lg:gap-7"
+            data-aos="fade-up"
+          >
             <div className="p-8 shadow-md border flex flex-col gap-4 w-full">
               <div className="flex gap-5 items-center">
                 <IoCheckmark className="text-2xl text-[#2986fe]" />
@@ -46,7 +49,7 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div className="space-y-10">
+        <div className="space-y-10" data-aos="fade-up">
           <div>
             <h2 className="text-xl font-medium mb-5">
               Over 1500 Successful Landing Pages Delivered
