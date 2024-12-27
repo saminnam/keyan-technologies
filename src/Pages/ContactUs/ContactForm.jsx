@@ -63,14 +63,14 @@ const ContactForm = () => {
     return Object.keys(errors).every((key) => errors[key] === "");
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     if (validateForm()) {
       axios
         .post("http://localhost:3000/api/contacts", formData)
         .then(() => {
-          alert("Form submitted successfully!");
           resetForm();
+          alert("Form submitted successfully!");
+          
         })
         .catch((error) => {
           console.error("Error saving contact", error);
@@ -88,10 +88,9 @@ const ContactForm = () => {
         Are you prepared to elevate your business to new heights? Reach out to
         us today.
       </p>
-      <form
+      <div
         className="mx-auto mb-4 max-w-sm text-left"
         name="wf-form-password"
-        onSubmit={handleSubmit}
       >
         <div className="main">
           <div className="relative mb-5">
@@ -227,13 +226,14 @@ const ContactForm = () => {
           <div className="w-full">
             <button
               type="submit"
+              onClick={handleSubmit}
               className="inline-flex py-3 w-full cursor-pointer items-center justify-center rounded-lg bg-[#006CB7] text-[14px] font-medium text-white transition-all border border-[#006CB7] hover:bg-white hover:text-[#006CB7]"
             >
               Submit
             </button>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   );
 };

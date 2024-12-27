@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import { apiRequest } from "./Api";
+import { API_BASE_URL } from "./Api";
+import axios from "axios";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
@@ -12,9 +13,9 @@ const Portfolio = () => {
   }, []);
 
   const fetcher = () => {
-    apiRequest("get", "portfolio")
-      .then((data) => {
-        setProjects(data);
+    axios.get(`${API_BASE_URL}portfolio`)
+      .then((response) => {
+        setProjects(response.data);
       })
       .catch((error) => {
         console.log("Failed to show projects", error);

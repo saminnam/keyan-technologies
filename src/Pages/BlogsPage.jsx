@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import GlobalTitle from "../Components/GlobalTitle";
-import { apiRequest } from "../Components/Api";
+import { API_BASE_URL } from "../Components/Api";
+import axios from "axios";
 
 const BlogsPage = () => {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -20,9 +21,10 @@ const BlogsPage = () => {
 
   const fetchBlogs = () => {
     setLoading(true);
-    apiRequest("get", "blogs")
-      .then((data) => {
-        setBlogPosts(data);
+    axios
+      .get(`${API_BASE_URL}blogs`)
+      .then((response) => {
+        setBlogPosts(response.data);
         setLoading(false);
       })
       .catch((error) => {
@@ -116,10 +118,8 @@ const BlogsPage = () => {
               ))}
             </div>
           )}
-          {/* Pagination controls with arrows */}
           <div className="flex justify-center mt-8">
             <ul className="flex space-x-2">
-              {/* Previous Button */}
               {currentPage > 1 && (
                 <li>
                   <button
@@ -130,7 +130,6 @@ const BlogsPage = () => {
                   </button>
                 </li>
               )}
-              {/* Page Numbers */}
               {Array.from({ length: totalPages }, (_, index) => (
                 <li key={index}>
                   <button
@@ -145,7 +144,6 @@ const BlogsPage = () => {
                   </button>
                 </li>
               ))}
-              {/* Next Button */}
               {currentPage < totalPages && (
                 <li>
                   <button

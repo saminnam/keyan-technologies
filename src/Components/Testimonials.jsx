@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { apiRequest } from "./Api";
 import Slider from "react-slick";
 import star from "../assets/star.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { API_BASE_URL } from "./Api";
+import axios from "axios";
 
 const Testimonials = () => {
   const [testimonialsData, setTestimonialsData] = useState([]);
@@ -44,17 +45,19 @@ const Testimonials = () => {
   };
 
   useEffect(() => {
-    const fetcher = async () => {
-      try {
-        const data = await apiRequest("get", "testimonials");
-        setTestimonialsData(data);
-      } catch (error) {
-        console.error("Failed to fetch testimonials", error);
-      }
-    };
-
     fetcher();
   }, []);
+  
+  const fetcher = () => {
+    axios
+      .get(`${API_BASE_URL}testimonials`)
+      .then((response) => {
+        setTestimonialsData(response.data);
+      })
+      .catch((error) => {
+        console.error("Failed to fetch testimonials", error);
+      });
+  };
 
   return (
     <section className="py-12 group bg-gray-50 sm:py-16 lg:py-20 bg-service-pattern bg-cover bg-no-repeat">
@@ -73,7 +76,10 @@ const Testimonials = () => {
           {testimonialsData.length > 0 ? (
             <Slider {...settings}>
               {testimonialsData.map((testimonial, index) => (
-                <div key={index} className="p-6 bg-white cursor-pointer ease-linear hover:scale-105 transition-all duration-300 border shadow-lg rounded-lg">
+                <div
+                  key={index}
+                  className="p-6 bg-white cursor-pointer ease-linear hover:scale-105 transition-all duration-300 border shadow-lg rounded-lg"
+                >
                   <div className="mb-12 md:mb-0">
                     <div className="mb-6 flex justify-center">
                       <img

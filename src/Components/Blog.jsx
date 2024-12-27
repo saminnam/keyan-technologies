@@ -1,5 +1,6 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
-import { apiRequest } from "./Api";
+import { API_BASE_URL } from "./Api";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -7,9 +8,10 @@ const Blog = () => {
     fetcher();
   }, []);
   const fetcher = () => {
-    apiRequest("get", "blogs")
-      .then((data) => {
-        setBlogs(data);
+    axios
+      .get(`${API_BASE_URL}blogs`)
+      .then((response) => {
+        setBlogs(response.data);
       })
       .catch((error) => {
         console.log("Failed to fetch blogs", error);

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { apiRequest } from "./Api";
+import { API_BASE_URL } from "./Api";
+import axios from "axios";
 
 const OurTeam = () => {
   const [teams, setTeams] = useState([]);
@@ -8,9 +9,10 @@ const OurTeam = () => {
     fetcher();
   }, []);
   const fetcher = () => {
-    apiRequest("get", "team")
-      .then((data) => {
-        setTeams(data);
+    axios
+      .get(`${API_BASE_URL}team`)
+      .then((response) => {
+        setTeams(response.data);
       })
       .catch((error) => {
         console.log("Failed to show teams", error);
@@ -29,8 +31,11 @@ const OurTeam = () => {
       {teams.length > 0 ? (
         <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 mx-10 gap-10 mt-12">
           {teams.map((team) => (
-            <div className="relative group overflow-hidden flex flex-col items-center" key={team.id}
-            data-aos="fade-up">
+            <div
+              className="relative group overflow-hidden flex flex-col items-center"
+              key={team.id}
+              data-aos="fade-up"
+            >
               <div className="rounded-lg shadow-lg border transition-all p-6 bg-white ease-linear duration-300 hover:border-[#2986fe] cursor-pointer hover:scale-105 my-6 flex flex-col justify-center items-center">
                 <img
                   src={`http://localhost:3000/Images/${team.image}`}

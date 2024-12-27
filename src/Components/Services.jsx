@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { apiRequest } from "./Api";
+import { API_BASE_URL } from "./Api";
+import axios from "axios";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -8,9 +9,10 @@ const Services = () => {
     fetcher();
   }, []);
   const fetcher = () => {
-    apiRequest("get", "services")
-      .then((data) => {
-        setServices(data);
+    axios
+      .get(`${API_BASE_URL}services`)
+      .then((response) => {
+        setServices(response.data);
       })
       .catch((error) => {
         console.log("Failed to fetch services", error);

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import GlobalTitle from "../Components/GlobalTitle";
-import { apiRequest } from "../Components/Api";
+import { API_BASE_URL } from "../Components/Api";
+import axios from "axios";
 
 const PortfolioPage = () => {
   const [portfolios, setPortfolios] = useState([]);
@@ -10,9 +11,10 @@ const PortfolioPage = () => {
   }, []);
 
   const fetcher = () => {
-    apiRequest("get", "portfolio")
-      .then((data) => {
-        setPortfolios(data);
+    axios
+      .get(`${API_BASE_URL}portfolio`)
+      .then((response) => {
+        setPortfolios(response.data);
       })
       .catch((error) => {
         console.log("Failed to fetch portfolios", error);
