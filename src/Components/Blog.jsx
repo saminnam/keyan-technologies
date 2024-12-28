@@ -33,7 +33,6 @@ const Blog = () => {
         <p className="mb-8 mt-4 text-center text-sm text-gray-500 sm:text-base md:mb-12 lg:mb-10 lg:text-left">
           The Future of Software Development: Trends to Watch.
         </p>
-        {/* Content */}
         {blogs.length > 0 ? (
           <div className="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-10 lg:grid-cols-3 lg:max-w-full">
             {blogs

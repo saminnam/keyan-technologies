@@ -8,7 +8,6 @@ import axios from "axios";
 
 const Testimonials = () => {
   const [testimonialsData, setTestimonialsData] = useState([]);
-
   const settings = {
     dots: true,
     infinite: true,

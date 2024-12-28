@@ -24,7 +24,6 @@ const AboutKeyan = () => {
               optimize operations and boost productivity. form, simply free text
               by injected humour, or randomised.
             </p>
-
             <h2 className="text-2xl font-medium uppercase tracking-tight text-[#2986fe]">
               We provide reliable, tailored solutions for your business.
             </h2>

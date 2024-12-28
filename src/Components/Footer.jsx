@@ -154,7 +154,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/* <hr className="mt-16 border-gray-200" /> */}
         <div className="sm:flex px-4 mx-auto mt-16 lg:px-20 sm:items-center sm:justify-between bg-[#006CB7] py-5">
           <p className="text-[16px] text-white">
             © Copyright 2024, All Rights Reserved

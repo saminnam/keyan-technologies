@@ -64,7 +64,7 @@ const BlogsPage = () => {
               development.
             </p>
           </div>
-          {error ? (
+          {loading && loading ? (
             <p className="text-center mt-5">Loading Blogs...</p>
           ) : (
             <div className="flex flex-wrap lg:flex-row justify-between mt-16 flex-col">

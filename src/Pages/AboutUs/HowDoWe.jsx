@@ -7,13 +7,6 @@ const HowDoWe = () => {
     <section className="py-10 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center">
-          {/* <h2
-            className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
-            data-aos="flip-down"
-            data-aos-duration="2000"
-          >
-            How do we create success
-          </h2> */}
           <div className="flex justify-center mb-5">
             <h2 className="text-sm border-b border-[#2986fe] lg:text-lg text-[#2986fe] font-semibold text-primary">
               How do we create success

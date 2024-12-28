@@ -10,29 +10,34 @@ import { Link } from "react-router-dom";
 
 const services = () => [
   {
-    icon: <IoColorPaletteOutline className="text-5xl text-[#2986fe]"/>,
+    icon: <IoColorPaletteOutline className="text-5xl text-[#2986fe]" />,
     title: "UI/UX",
-    subContent: "Crafting intuitive and visually engaging UI/UX designs that enhance user experience and drive business success.",
+    subContent:
+      "Crafting intuitive and visually engaging UI/UX designs that enhance user experience and drive business success.",
   },
   {
-    icon: <FaLaptopCode className="text-5xl text-[#73fe29]"/>,
+    icon: <FaLaptopCode className="text-5xl text-[#73fe29]" />,
     title: "WEB DEVELOPMENT",
-    subContent: "Our web development services focus on creating dynamic, responsive, and user-friendly websites.",
+    subContent:
+      "Our web development services focus on creating dynamic, responsive, and user-friendly websites.",
   },
   {
-    icon: <TbDeviceMobileCode className="text-5xl text-[#fe7729]"/>,
+    icon: <TbDeviceMobileCode className="text-5xl text-[#fe7729]" />,
     title: "APP DEVELOPMENT",
-    subContent: "Our app development services deliver intuitive, high-performance mobile and web applications.",
+    subContent:
+      "Our app development services deliver intuitive, high-performance mobile and web applications.",
   },
   {
-    icon: <RiPagesLine className="text-5xl text-[#f05c72]"/>,
+    icon: <RiPagesLine className="text-5xl text-[#f05c72]" />,
     title: "LANDING PAGES",
-    subContent: "Creating impactful, conversion-driven landing pages to boost your business growth.",
+    subContent:
+      "Creating impactful, conversion-driven landing pages to boost your business growth.",
   },
   {
-    icon: <LiaUsersCogSolid className="text-5xl text-[#ada729]"/>,
+    icon: <LiaUsersCogSolid className="text-5xl text-[#ada729]" />,
     title: "TECHNICAL CONSULTING",
-    subContent: "Offering expert guidance to drive innovation and optimize your business strategies.",
+    subContent:
+      "Offering expert guidance to drive innovation and optimize your business strategies.",
   },
 ];
 
@@ -85,9 +90,15 @@ const PopularService = () => {
               className="py-16 px-5 group hover:bg-card-pattern bg-cover bg-no-repeat border-b-2 bg-white border-b-[#006CB7] border"
             >
               <div className="flex flex-col justify-center items-center ">
-              <div className="bg-white p-5 border rounded-full mb-5">{service.icon}</div>
-              <h1 className="text-xl font-bold mb-2 group-hover:text-white transition-all ease-in duration-300">{service.title}</h1>
-              <p className="text-base text-center text-gray-600 group-hover:text-white transition-all ease-in duration-300">{service.subContent}</p>
+                <div className="bg-white p-5 border rounded-full mb-5">
+                  {service.icon}
+                </div>
+                <h1 className="text-xl font-bold mb-2 group-hover:text-white transition-all ease-in duration-300">
+                  {service.title}
+                </h1>
+                <p className="text-base text-center text-gray-600 group-hover:text-white transition-all ease-in duration-300">
+                  {service.subContent}
+                </p>
               </div>
             </Link>
           ))}

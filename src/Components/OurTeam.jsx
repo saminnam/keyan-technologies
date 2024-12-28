@@ -8,6 +8,7 @@ const OurTeam = () => {
   useEffect(() => {
     fetcher();
   }, []);
+
   const fetcher = () => {
     axios
       .get(`${API_BASE_URL}team`)

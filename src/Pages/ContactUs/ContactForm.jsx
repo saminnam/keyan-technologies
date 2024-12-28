@@ -70,7 +70,6 @@ const ContactForm = () => {
         .then(() => {
           resetForm();
           alert("Form submitted successfully!");
-          
         })
         .catch((error) => {
           console.error("Error saving contact", error);
@@ -80,7 +79,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mx-auto  max-w-xl p-8 text-center rounded-lg shadow-lg shadow-gray-400 overflow-hidden bg-white" data-aos="zoom-out-down" data-aos-duration="2000">
+    <div
+      className="mx-auto  max-w-xl p-8 text-center rounded-lg shadow-lg shadow-gray-400 overflow-hidden bg-white"
+      data-aos="zoom-out-down"
+      data-aos-duration="2000"
+    >
       <h3 className="text-2xl font-bold md:text-3xl font-serif">
         Feel free to contact
       </h3>
@@ -88,10 +91,7 @@ const ContactForm = () => {
         Are you prepared to elevate your business to new heights? Reach out to
         us today.
       </p>
-      <div
-        className="mx-auto mb-4 max-w-sm text-left"
-        name="wf-form-password"
-      >
+      <div className="mx-auto mb-4 max-w-sm text-left" name="wf-form-password">
         <div className="main">
           <div className="relative mb-5">
             <input

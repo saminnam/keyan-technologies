@@ -1,14 +1,8 @@
-
-import 'animate.css';
+import "animate.css";
 import hero from "../assets/hero2.png";
-import Logos from './Logos';
-
-
-
+import Logos from "./Logos";
 
 const Hero = () => {
- 
-
   return (
     <section>
       <div className="mx-auto mt-10 w-full max-w-7xl px-5 py-16 md:px-10 md:py-20 relative">
@@ -26,7 +20,10 @@ const Hero = () => {
             Keyan Technologies offers cutting-edge web and app development
             solutions tailored to your business needs.
           </p>
-          <a href="#services" className="flex items-center justify-center animate__zoomInUp animate__animated">
+          <a
+            href="#services"
+            className="flex items-center justify-center animate__zoomInUp animate__animated"
+          >
             <button className="relative flex items-center justify-center bg-[#006CB7] text-white font-[inherit] text-[17px] font-medium px-[1.2em] py-[0.35em] rounded-[0.9em] border-none tracking-[0.05em] cursor-pointer shadow-[inset_0_0_1.6em_-0.6em_#714da6] overflow-hidden h-[2.8em] pr-[3.3em] group">
               Get started
               <div className="icon absolute flex items-center justify-center bg-white w-[2.2em] h-[2.2em] rounded-[0.7em] right-[0.3em] transition-all duration-300 group-hover:w-[calc(100%-0.6em)] group-active:scale-[0.95]">
@@ -47,7 +44,7 @@ const Hero = () => {
             </button>
           </a>
         </div>
-       <Logos/>
+        <Logos />
       </div>
       <img
         src={hero}
