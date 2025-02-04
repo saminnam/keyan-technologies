@@ -1,6 +1,6 @@
 import logo1 from "../assets/MicrosoftLogo.svg";
 import { useEffect, useState } from "react";
-import logo2 from "../assets/PaypalLogo.svg";
+import logo2 from "../assets/PayPalLogo.svg";
 import logo3 from "../assets/Group.svg";
 import logo4 from "../assets/ChaseLogo.svg";
 import logo5 from "../assets/WalmartLogo.svg";
