@@ -143,10 +143,10 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <p className="text-base font-semibold text-black">Reach Us</p>
             <div className="bg-[#006CB7] mt-2 rounded w-14 h-1"></div>
-            <div className="mt-6">
+            <div className="mt-6 border border-[#006CB7] p-1 bg-white rounded-lg group">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7967445171817!2d80.20484647484274!3d13.048605987273925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266c3af68c22d%3A0xb039199ab02199d6!2sDoshi%20Gardens!5e0!3m2!1sen!2sin!4v1734346646507!5m2!1sen!2sin"
-                className="w-44 h-32 rounded"
+                className="w-44 h-32 rounded-lg group-hover:scale-105 transition-all duration-300"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

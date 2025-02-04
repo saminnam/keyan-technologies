@@ -30,18 +30,18 @@ const OurTeam = () => {
         Meet the innovative minds driving our software solutions forward.
       </p>
       {teams.length > 0 ? (
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 mx-10 gap-10 mt-12">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mx-10 gap-10 mt-12">
           {teams.map((team) => (
             <div
               className="relative group overflow-hidden flex flex-col items-center"
               key={team.id}
               data-aos="fade-up"
             >
-              <div className="rounded-lg shadow-lg border transition-all p-6 bg-white ease-linear duration-300 hover:border-[#2986fe] cursor-pointer hover:scale-105 my-6 flex flex-col justify-center items-center">
+              <div className="rounded-lg w-[320px] h-[350px] shadow-lg border-2 overflow-hidden transition-all bg-white ease-linear duration-300 hover:border-[#2986fe] cursor-pointer hover:scale-105 my-6 flex flex-col justify-center items-center">
                 <img
                   src={`http://localhost:3000/Images/${team.image}`}
                   alt={team.name}
-                  className="w-full h-72 object-cover rounded mb-4"
+                  className="w-full h-full object-cover rounded"
                 />
               </div>
               <div className="absolute group-hover:bottom-8 border-[#2986fe] border w-full transition-all ease-linear duration-300 bottom-[-100px] flex flex-col justify-center items-center bg-white p-3 rounded">

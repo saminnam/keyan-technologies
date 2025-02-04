@@ -19,10 +19,17 @@ const AboutUs = () => {
       </div>
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 grid-cols-1 items-center">
         <div className="flex flex-col gap-5">
-          <h1 className="mb-4 text-4xl font-semibold md:text-6xl">
+          <h1 className="mb-4 text-4xl font-semibold leading-tight md:text-[50px] md:w-[450px] w-full">
             Your Vision, Our Expertise, Perfectly Crafted.
           </h1>
-          <p className="mb-6 max-w-2xl text-sm text-gray-500 sm:text-[18px] md:mb-10 lg:mb-12 text-justify leading-normal">Keyan Technologies specializes in Web, App, and Software Development, delivering innovative solutions like responsive websites, mobile apps, and creative visuals to help businesses thrive online. We turn your ideas into reality with cutting-edge technology and design.</p>
+
+          <p className="mb-6 max-w-2xl text-sm text-gray-500 sm:text-[18px] md:mb-10 lg:mb-12 text-justify leading-normal">
+            Keyan Technologies specializes in Web, App, and Software
+            Development, delivering innovative solutions like responsive
+            websites, mobile apps, and creative visuals to help businesses
+            thrive online. We turn your ideas into reality with cutting-edge
+            technology and design.
+          </p>
           <div className="flex lg:flex-row flex-col gap-5 relative">
             <div
               className="p-8 border space-y-2 cursor-pointer rounded shadow-lg group relative"
@@ -51,7 +58,8 @@ const AboutUs = () => {
                 Quality Service
               </h2>
               <p className="group-hover:text-[#006CB7]">
-              Providing reliable, top-quality solutions tailored to your needs.
+                Providing reliable, top-quality solutions tailored to your
+                needs.
               </p>
             </div>
           </div>
