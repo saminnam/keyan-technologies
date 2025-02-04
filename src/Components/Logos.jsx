@@ -1,9 +1,9 @@
-import logo1 from "../assets/Microsoft Logo.svg";
+import logo1 from "../assets/MicrosoftLogo.svg";
 import { useEffect, useState } from "react";
-import logo2 from "../assets/Paypal Logo.svg";
+import logo2 from "../assets/PaypalLogo.svg";
 import logo3 from "../assets/Group.svg";
-import logo4 from "../assets/Chase Logo.svg";
-import logo5 from "../assets/Walmart Logo.svg";
+import logo4 from "../assets/ChaseLogo.svg";
+import logo5 from "../assets/WalmartLogo.svg";
 
 const logos = [
   { logo: logo1, alt: "Microsoft Logo" },
